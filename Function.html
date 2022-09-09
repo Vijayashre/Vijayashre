@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='index.js'></script> -->
+    <style type="text/css">
+      
+    </style>
+</head>
+<body>
+   <h1>Function In JavaScript</h1> 
+
+   <div class="xzy">fkdkdf</div>
+   <div class="swlkalj">dklsls</div>
+
+   <ul>
+  <li>Fish</li>
+  <li>Apples</li>
+  <li>Cheese</li>
+  <li>Apples</li>
+  <li>Cheese</li>
+  <li>Apples</li>
+  <li>Cheese</li>
+ Designed dynamic and browser compatible pages using HTML5,CSS3,jQuery, and Javascrpit
+</ul>
+<div>
+   <img id="" src="C:/Users/User/Downloads/mobile-webp/tarot_himani.webp">
+</div>
+<div>
+   <img id="image"  src="">
+   <button type="button" onclick="show()" id="btnId">Show Image</button>
+</div>
+
+   <script>
+     function show() {
+            let image = document.getElementById("image");
+ 
+            image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3.png"
+ 
+            document.getElementById("btnID")
+                    .style.display = "none";
+        }
+    //     var x = 1;
+    //     a(); 
+    //     b();
+    //     console.log(x);
+    //    function a(){
+    //        var x = 10;
+    //        console.log(x);
+    //    }
+    //    function b(){
+    //        var x = 100;
+    //        console.log(x);
+    //    }
+/*const arr = [,2,3,4,5];
+function outerfunction(x){
+   return x* 2;
+}
+const output = arr.map(outerfunction);
+console.log(output); 
+
+
+function isOdd(x){
+ return x % 2;
+}
+const output1 = arr.filter(isOdd);
+console.log(output1); */
+
+// reduce
+
+const arrrRe = [1,2,5,4,6,7];
+
+function findsum(arrrRe){
+   let sum = 0;
+   for (var i = 0; i<arrrRe.length; i++) {
+       sum = sum + arrrRe[i];
+   }
+    return sum;
+}
+// console.log(findsum(arrrRe)); 
+const output3 = arrrRe.reduce(function(acc,curr){
+     acc = acc + curr;
+     return acc; 
+});
+console.log(output3);
+
+var str1 = "90378,51407,84027";
+const split_string = str1.split(" ");
+console.log(split_string);
+
+var arr =[4,3,6,8,7,3,6,7];
+ function removeDuplicates(arr) {
+        return arr.filter((item,
+            index) => arr.indexOf(item) === index);
+    }
+console.log(removeDuplicates(arr));
+
+
+function remove(arr){
+    return [...new Set(arr)];
+}
+console.log(remove(arr));
+
+
+   </script>
+
+</body>
+</html>
